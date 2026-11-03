@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ultimate Pet Shop | Sanjay Nagar</title>
+  <meta name="description" content="Shop pet food, toys, grooming products and accessories at The Ultimate Pet Shop, Sanjay Nagar, Ghaziabad.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#F97316',
+            dark: '#171717'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; }
+    .product-card {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,.09);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl md:text-2xl font-extrabold text-gray-900">
+        🐾 The Ultimate <span class="text-orange-500">Pet Shop</span>
+      </a>
+      <a href="#products"
+         class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-full font-semibold text-sm">
+        Explore Products
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 text-center">
+      <span class="inline-block bg-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-sm mb-6">
+        🐶 Your Pet's Happiness Starts Here
+      </span>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        The Ultimate <span class="text-orange-500">Pet Shop</span>
+      </h1>
+
+      <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-9">
+        Best Pet Food, Toys & Accessories in Sanjay Nagar
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#products"
+           class="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full font-bold">
+          Shop Products →
+        </a>
+
+        <a href="https://wa.me/918285847227?text=Hello%2C%20I%20want%20to%20know%20about%20your%20pet%20products."
+           target="_blank" rel="noopener"
+           class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-full font-bold">
+          💬 Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="max-w-7xl mx-auto px-5 py-16">
+    <div class="text-center mb-10">
+      <p class="text-orange-500 font-bold uppercase tracking-widest text-sm">Explore</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-2">Shop By Category</h2>
+      <p class="text-gray-500 mt-3">Everything your furry friend needs.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a href="#dog-food" class="bg-orange-50 p-6 rounded-2xl text-center hover:bg-orange-100 transition">
+        <div class="text-4xl mb-3">🐶</div>
+        <h3 class="font-bold">Dog Food & Treats</h3>
+      </a>
+
+      <a href="#cat-supplies" class="bg-orange-50 p-6 rounded-2xl text-center hover:bg-orange-100 transition">
+        <div class="text-4xl mb-3">🐱</div>
+        <h3 class="font-bold">Cat Supplies</h3>
+      </a>
+
+      <a href="#grooming" class="bg-orange-50 p-6 rounded-2xl text-center hover:bg-orange-100 transition">
+        <div class="text-4xl mb-3">🧴</div>
+        <h3 class="font-bold">Pet Grooming</h3>
+      </a>
+
+      <a href="#toys" class="bg-orange-50 p-6 rounded-2xl text-center hover:bg-orange-100 transition">
+        <div class="text-4xl mb-3">🧸</div>
+        <h3 class="font-bold">Toys & Accessories</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <main id="products" class="max-w-7xl mx-auto px-5 pb-20">
+
+    <!-- DOG FOOD -->
+    <section id="dog-food" class="mb-16 scroll-mt-24">
+      <div class="flex items-center justify-between mb-7">
+        <div>
+          <p class="text-orange-500 font-semibold text-sm">FOR YOUR BEST FRIEND</p>
+          <h2 class="text-2xl md:text-3xl font-extrabold">🐶 Dog Food & Treats</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fff1e6/f97316?text=Pedigree"
+               class="w-full h-40 object-cover" alt="Pedigree dog food">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Pedigree Adult</h3>
+            <p class="text-gray-500 text-sm mt-1">1.2 KG Pack</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹450</p>
+            <button onclick="orderProduct('Pedigree Adult - 1.2 KG')"
+              class="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fff1e6/f97316?text=Royal+Canin"
+               class="w-full h-40 object-cover" alt="Royal Canin">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Royal Canin</h3>
+            <p class="text-gray-500 text-sm mt-1">1 KG Pack</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹850</p>
+            <button onclick="orderProduct('Royal Canin - 1 KG')"
+              class="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fff1e6/f97316?text=DOG+TREATS"
+               class="w-full h-40 object-cover" alt="Dog treats">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Dog Biscuits</h3>
+            <p class="text-gray-500 text-sm mt-1">500 GM Pack</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹180</p>
+            <button onclick="orderProduct('Dog Biscuits - 500 GM')"
+              class="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAT SUPPLIES -->
+    <section id="cat-supplies" class="mb-16 scroll-mt-24">
+      <p class="text-orange-500 font-semibold text-sm">FOR YOUR LITTLE FELINE</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-7">🐱 Cat Supplies</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fef3c7/92400e?text=Whiskas"
+               class="w-full h-40 object-cover" alt="Whiskas cat food">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Whiskas Cat Food</h3>
+            <p class="text-gray-500 text-sm mt-1">1.2 KG Pack</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹550</p>
+            <button onclick="orderProduct('Whiskas Cat Food - 1.2 KG')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fef3c7/92400e?text=Cat+Litter"
+               class="w-full h-40 object-cover" alt="Cat litter">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Cat Litter</h3>
+            <p class="text-gray-500 text-sm mt-1">5 KG Pack</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹350</p>
+            <button onclick="orderProduct('Cat Litter - 5 KG')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fef3c7/92400e?text=Cat+Treats"
+               class="w-full h-40 object-cover" alt="Cat treats">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Cat Treats</h3>
+            <p class="text-gray-500 text-sm mt-1">60 GM Pack</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹150</p>
+            <button onclick="orderProduct('Cat Treats - 60 GM')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GROOMING -->
+    <section id="grooming" class="mb-16 scroll-mt-24">
+      <p class="text-orange-500 font-semibold text-sm">CARE & HYGIENE</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-7">🧴 Pet Grooming & Shampoos</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/e0f2fe/0369a1?text=Pet+Shampoo"
+               class="w-full h-40 object-cover" alt="Pet shampoo">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Pet Shampoo</h3>
+            <p class="text-gray-500 text-sm mt-1">200 ML</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹250</p>
+            <button onclick="orderProduct('Pet Shampoo - 200 ML')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/e0f2fe/0369a1?text=Pet+Brush"
+               class="w-full h-40 object-cover" alt="Pet grooming brush">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Grooming Brush</h3>
+            <p class="text-gray-500 text-sm mt-1">1 Piece</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹199</p>
+            <button onclick="orderProduct('Grooming Brush - 1 Piece')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/e0f2fe/0369a1?text=Pet+Wipes"
+               class="w-full h-40 object-cover" alt="Pet wipes">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Pet Cleaning Wipes</h3>
+            <p class="text-gray-500 text-sm mt-1">Pack of 40</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹180</p>
+            <button onclick="orderProduct('Pet Cleaning Wipes - Pack of 40')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TOYS -->
+    <section id="toys" class="scroll-mt-24">
+      <p class="text-orange-500 font-semibold text-sm">PLAY & ACCESSORIZE</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-7">🧸 Toys & Accessories</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fce7f3/be185d?text=Pet+Toy"
+               class="w-full h-40 object-cover" alt="Pet toy">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Chew Toy</h3>
+            <p class="text-gray-500 text-sm mt-1">1 Piece</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹199</p>
+            <button onclick="orderProduct('Chew Toy - 1 Piece')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fce7f3/be185d?text=Pet+Collar"
+               class="w-full h-40 object-cover" alt="Pet collar">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Pet Collar</h3>
+            <p class="text-gray-500 text-sm mt-1">Adjustable</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹150</p>
+            <button onclick="orderProduct('Pet Collar - Adjustable')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm">
+          <img src="https://placehold.co/500x350/fce7f3/be185d?text=Pet+Bowl"
+               class="w-full h-40 object-cover" alt="Pet food bowl">
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Pet Food Bowl</h3>
+            <p class="text-gray-500 text-sm mt-1">1 Piece</p>
+            <p class="text-orange-600 font-extrabold text-xl mt-3">₹120</p>
+            <button onclick="orderProduct('Pet Food Bowl - 1 Piece')"
+              class="w-full bg-green-600 text-white py-2.5 rounded-xl mt-4 text-sm font-bold">
+              WhatsApp Order
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT CTA -->
+  <section class="bg-orange-500 text-white text-center px-6 py-14">
+    <h2 class="text-3xl font-extrabold mb-4">Your Pet Deserves The Best!</h2>
+    <p class="mb-7 text-orange-50">Contact us today for your pet's favourite products.</p>
+    <a href="https://wa.me/918285847227?text=Hello%2C%20I%20want%20to%20enquire%20about%20pet%20products."
+       target="_blank" rel="noopener"
+       class="inline-block bg-white text-green-700 px-8 py-4 rounded-full font-extrabold hover:bg-gray-100">
+      💬 Chat With Us on WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-950 text-gray-300 px-6 py-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-extrabold text-white mb-3">
+          🐾 The Ultimate Pet Shop
+        </h2>
+        <p class="text-gray-400">
+          Best Pet Food, Toys & Accessories in Sanjay Nagar.
+          Making every pet happier, healthier and loved.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">Contact Information</h3>
+        <p class="mb-3">📍 Sector 23, Sanjay Nagar, Ghaziabad</p>
+        <p class="mb-3">📞 082858 47227</p>
+        <a href="https://wa.me/918285847227"
+           target="_blank" rel="noopener"
+           class="text-green-400 font-semibold">
+          WhatsApp: Chat With Us →
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
+      © 2026 The Ultimate Pet Shop. All Rights Reserved.
+      <p class="mt-2">Made with ❤️ for Pet Lovers</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP ORDER SCRIPT -->
+  <script>
+    const whatsappNumber = "918285847227";
+
+    function orderProduct(productName) {
+      const message = `Hello, I want to order ${productName}. Please share availability and details.`;
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+
+</body>
+</html>
